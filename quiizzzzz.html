@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+</head>
+<body>
+
+<h1>Simple Quiz</h1>
+
+
+<div>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+</div>
+
+<div>
+    <label for="date">Date:</label>
+    <input type="date" id="date">
+</div>
+
+<form id="quiz-form">
+
+
+    <div>
+        <p>1. What city is the coldest in the Philippines?</p>
+        <input type="text" id="q1" placeholder="Your answer">
+    </div>
+
+    <div>
+        <p>2. Who is the current President of the Philippines?</p>
+        <input type="text" id="q2" placeholder="Your answer">
+    </div>
+
+    <div>
+        <p>3. What is the square root of 40?</p>
+        <input type="text" id="q3" placeholder="Your answer">
+    </div>
+
+    <div>
+        <p>4. What is the National Animal of the Philippines?</p>
+        <input type="text" id="q4" placeholder="Your answer">
+    </div>
+
+
+    <div>
+        <p>5. Which planet is known as the Red Planet?</p>
+        <label><input type="radio" name="q5" value="Mars"> Mars</label><br>
+        <label><input type="radio" name="q5" value="Earth"> Earth</label><br>
+        <label><input type="radio" name="q5" value="Venus"> Venus</label>
+    </div>
+
+    <div>
+        <p>6. Who painted the Mona Lisa?</p>
+        <label><input type="radio" name="q6" value="Leonardo"> Leonardo da Vinci</label><br>
+        <label><input type="radio" name="q6" value="VanGogh"> Vincent van Gogh</label>
+    </div>
+
+    <div>
+        <p>7. What is the largest ocean on Earth?</p>
+        <label><input type="radio" name="q7" value="Pacific"> Pacific Ocean</label><br>
+        <label><input type="radio" name="q7" value="Atlantic"> Atlantic Ocean</label>
+    </div>
+
+
+    <div>
+        <p>8. Which of the following are programming languages? (Select all that apply)</p>
+        <label><input type="checkbox" name="q8" value="Python"> Python</label><br>
+        <label><input type="checkbox" name="q8" value="Excel"> Excel</label><br>
+        <label><input type="checkbox" name="q8" value="JavaScript"> JavaScript</label>
+    </div>
+
+    <div>
+        <p>9. Which of these are mammals? (Select all that apply)</p>
+        <label><input type="checkbox" name="q9" value="Whale"> Whale</label><br>
+        <label><input type="checkbox" name="q9" value="Shark"> Shark</label><br>
+        <label><input type="checkbox" name="q9" value="Dolphin"> Dolphin</label>
+    </div>
+
+    <div>
+        <p>10. Which of these are fruits? (Select all that apply)</p>
+        <label><input type="checkbox" name="q10" value="Apple"> Apple</label><br>
+        <label><input type="checkbox" name="q10" value="Carrot"> Carrot</label><br>
+        <label><input type="checkbox" name="q10" value="Banana"> Banana</label>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+</form>
+
+<div id="result"></div>
+
+</body>
+</html>
